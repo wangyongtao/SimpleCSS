@@ -1,5 +1,10 @@
 // utilities
 
+.sys_version::after {
+  content: $version;
+  color: $gray-5;
+}
+
 .hidden {
   display: none !important;
 }
@@ -76,7 +81,15 @@
 .text-italic {
   font-style: italic;
 }
+
 .bold,
 .text-bold {
   font-weight: bold;
 }
+
+.center,
+.text-center {
+    text-align: center;
+}
+
+

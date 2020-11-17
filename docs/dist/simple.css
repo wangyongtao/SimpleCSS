@@ -424,6 +424,11 @@ a:active {
   color: red;
 }
 
+.sys_version::after {
+  content: "0.0.1";
+  color: #A0AEC0;
+}
+
 .hidden {
   display: none !important;
 }
@@ -523,6 +528,11 @@ a:active {
   font-weight: bold;
 }
 
+.center,
+.text-center {
+  text-align: center;
+}
+
 .container,
 .container-fluid,
 .container-sm,
@@ -586,6 +596,97 @@ a:active {
 .columns.col-oneline {
   flex-wrap: nowrap;
   overflow-x: auto;
+}
+
+[class~=col-],
+.column {
+  flex: 1;
+  max-width: 100%;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+}
+[class~=col-].col-12, [class~=col-].col-11, [class~=col-].col-10, [class~=col-].col-9, [class~=col-].col-8, [class~=col-].col-7, [class~=col-].col-6, [class~=col-].col-5, [class~=col-].col-4, [class~=col-].col-3, [class~=col-].col-2, [class~=col-].col-1, [class~=col-].col-auto,
+.column.col-12,
+.column.col-11,
+.column.col-10,
+.column.col-9,
+.column.col-8,
+.column.col-7,
+.column.col-6,
+.column.col-5,
+.column.col-4,
+.column.col-3,
+.column.col-2,
+.column.col-1,
+.column.col-auto {
+  flex: none;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-11 {
+  width: 91.66666667%;
+}
+
+.col-10 {
+  width: 83.33333333%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-8 {
+  width: 66.66666667%;
+}
+
+.col-7 {
+  width: 58.33333333%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-5 {
+  width: 41.66666667%;
+}
+
+.col-4 {
+  width: 33.33333333%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-2 {
+  width: 16.66666667%;
+}
+
+.col-1 {
+  width: 8.33333333%;
+}
+
+.col-auto {
+  flex: 0 0 auto;
+  max-width: none;
+  width: auto;
+}
+
+.col-mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col-ml-auto {
+  margin-left: auto;
+}
+
+.col-mr-auto {
+  margin-right: auto;
 }
 
 .btn {
@@ -1172,6 +1273,42 @@ table a {
 
 .table-horizontal tbody > tr:last-child > td {
   border-bottom-width: 0;
+}
+
+.card {
+  background: #fff;
+  border: 0.05rem solid #cad9ea;
+  border-radius: 0.1rem;
+  display: flex;
+  flex-direction: column;
+}
+.card .card-header,
+.card .card-body,
+.card .card-footer {
+  padding: 0.8rem;
+  padding-bottom: 0;
+}
+.card .card-header:last-child,
+.card .card-body:last-child,
+.card .card-footer:last-child {
+  padding-bottom: 0.8rem;
+}
+.card .card-body {
+  flex: 1 1 auto;
+}
+.card .card-image {
+  padding-top: 0.8rem;
+}
+.card .card-image:first-child {
+  padding-top: 0;
+}
+.card .card-image:first-child img {
+  border-top-left-radius: 0.1rem;
+  border-top-right-radius: 0.1rem;
+}
+.card .card-image:last-child img {
+  border-bottom-left-radius: 0.1rem;
+  border-bottom-right-radius: 0.1rem;
 }
 
 pre,
