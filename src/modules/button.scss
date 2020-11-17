@@ -1,0 +1,145 @@
+// button.scss
+
+@import "variables";
+
+.btn {
+  font-family: inherit;
+  font-size: 100%;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 0.5em 1em;
+  display: inline-block;
+  line-height: normal;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-drag: none;
+  user-select: none;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 4px;
+  background-color: $gray-3;
+  border-color: $gray-4;
+}
+
+/* Firefox: Get rid of the inner focus border */
+.btn::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+.btn-group {
+  letter-spacing: -0.31em; /* Webkit: collapse white-space between units */
+  text-rendering: optimizespeed; /* Webkit: fixes text-rendering: optimizeLegibility */
+}
+
+.opera-only :-o-prefocus,
+.btn-group {
+  word-spacing: -0.43em;
+}
+
+.btn-group .btn {
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto;
+}
+
+.btn.btn-xs {
+  padding: 0.2rem 0.2rem;
+  font-size: 11px;
+}
+.btn.btn-sm {
+  padding: 0.35rem 0.35rem;
+}
+
+.btn-hover,
+.btn:hover,
+.btn:focus {
+  background-image: linear-gradient(
+    transparent,
+    rgba(0, 0, 0, 0.05) 40%,
+    rgba(0, 0, 0, 0.1)
+  );
+}
+.btn:focus {
+  outline: 0;
+}
+.btn-active,
+.btn:active {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset,
+    0 0 6px rgba(0, 0, 0, 0.2) inset;
+  border-color: $black;
+}
+
+.btn[disabled],
+.btn-disabled,
+.btn-disabled:hover,
+.btn-disabled:focus,
+.btn-disabled:active {
+  border: none;
+  background-image: none;
+  opacity: 0.4;
+  cursor: not-allowed;
+  box-shadow: none;
+  pointer-events: none;
+}
+
+.btn-hidden {
+  display: none;
+}
+
+.btn-primary,
+.btn-selected,
+a.btn-primary,
+a.btn-selected {
+  background-color: rgb(0, 120, 231);
+  color: $white;
+}
+
+/* Button Groups */
+.btn-group .btn {
+  margin: 0;
+  border-radius: 0;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.btn-group .btn:first-child {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.btn-group .btn:last-child {
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-right: none;
+}
+
+.btn-success,
+.btn-error,
+.btn-warning,
+.btn-secondary {
+  color: $white;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  background: $bg-primary;
+}
+
+.btn-success {
+  background: $bg-success;
+}
+
+.btn-error {
+  background: $bg-error;
+}
+
+.btn-warning {
+  background: $bg-warning;
+  color: $gray-6;
+}
+
+.btn-secondary {
+  background: $bg-secondary;
+}

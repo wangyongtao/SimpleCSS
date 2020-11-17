@@ -1,1 +1,137 @@
-hi
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SimpleCSS framework</title>
+	<meta name="author" content="wangyongtao" />
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="SimpleCSS: A simple CSS framework.">
+	<!-- import simple.css -->
+    <link rel="stylesheet" type="text/css" href="../dist/simple.css">
+</head>
+ 
+<body>
+<div class="container">
+
+<header class="navbar">
+  <section class="navbar-section justify-left">
+    <a class="nav-item" href="..." class="navbar-brand mr-2">SimpleCSS</a>
+    <a class="nav-item" href="/demo/index.html">Examples</a>
+    <a class="nav-item" href="https://github.com/wangyongtao">GitHub</a>
+  </section>
+  <section class="navbar-section">
+    <a class="nav-item" href="/demo/login.html">login</a>
+    <a class="nav-item" href="/demo/register.hmtl">register</a>
+  </section>
+</header>
+</div>
+<div class="container">
+
+	<div class="menu menu-horizontal">
+	    <a href="#" class="menu-heading menu-link">BRAND</a>
+	    <ul class="menu-list">
+	        <li class="menu-item">
+	            <a href="#" class="menu-link">News</a>
+	        </li>
+	        <li class="menu-item">
+	            <a href="#" class="menu-link">Sports</a>
+	        </li>
+	        <li class="menu-item">
+	            <a href="#" class="menu-link">Finance</a>
+	        </li>
+	    </ul>
+	</div>
+
+  
+<!-- <iframe src="detail.html" width="100%"></iframe> -->
+
+<table>
+  	<tr>
+    	<th>ID </th> <th> 商品名 </th> <th>成本价</th> <th>售价</th> <th>状态</th> <th>操作</th>
+  	</tr>
+  	<tr>
+    	<td>1001</td> 
+    	<td>泰迪贵宾专用成犬粮</td> 
+    	<td>208.50</td> 
+    	<td>217</td> 
+    	<td> <span class="green">上架中</span> </td> 
+    	<td> <a>下架</a> </td>
+	</tr>
+	<tr>
+		<td>1002</td> 
+		<td>成犬粮牛肉肝蔬菜狗粮</td> 
+		<td>258.50</td> 
+		<td>289</td> 
+		<td> <span class="green">上架中</span> </td> 
+		<td> <a>下架</a> </td>
+	</tr>
+	<tr>
+		<td>1003</td> 
+		<td>全价小型成犬粮 1.5kg</td> 
+		<td>258.50</td> 
+		<td>289</td> 
+		<td> <span class="gray">待上架</span> </td> 
+		<td> <a>上架</a> </td>
+	</tr>
+	<tr>
+		<td>1004</td> 
+		<td>全价小型成犬粮 2.5kg</td> 
+		<td>258.50</td> 
+		<td>289</td> 
+		<td> <span class="red">待上架</span> </td> 
+		<td> <a>上架</a> </td>
+	</tr>
+  </tr>
+</table>
+
+
+	<p> HTML code 元素呈现一段计算机代码.  </p>
+	<p>Regular text. <code>This is code.</code> Regular text.</p>
+
+ 	<p> HTML code 元素呈现一段计算机代码.  </p>
+	<pre><code>
+&lt;head&gt;
+&lt;link rel="stylesheet" href="simple.css"&gt;
+&lt;link rel="stylesheet" href="spectre-exp.min.css"&gt;
+&lt;head&gt;</code></pre>
+	
+<hr>
+<button type="button"> system default button </button>
+<br/>
+<br/>
+<button class="btn btn-default"> default </button>
+<button class="btn btn-primary">primary</button>
+<button class="btn btn-success"> success </button>
+<button class="btn btn-error"> error </button>
+<button class="btn btn-warning"> warning </button>
+<button class="btn btn-secondary"> secondary </button>
+
+<hr class="border-em">
+
+	<form class="form form-aligned">
+        <div class="control-group">
+            <label for="aligned-name">Username</label>
+            <input type="text" id="aligned-name" placeholder="Username" />
+            <span class="form-message-inline">This is a required field.</span>
+        </div>
+        <div class="control-group">
+            <label for="aligned-password">Password</label>
+            <input type="password" id="aligned-password" placeholder="Password" />
+        </div>
+        <div class="control-group">
+            <label for="aligned-email">Email Address</label>
+            <input type="email" id="aligned-email" placeholder="Email Address" />
+        </div>
+        <div class="controls">
+            <label for="aligned-cb" class="checkbox">
+                <input type="checkbox" id="aligned-cb" /> I&#x27;ve read the terms and conditions</label>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+	</form>
+
+</div>
+
+
+</body>
+ 
+</html>

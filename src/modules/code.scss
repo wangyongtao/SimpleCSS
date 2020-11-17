@@ -1,0 +1,12 @@
+// Code
+@import "variables";
+@import "color";
+
+pre,
+code,
+kbd,
+samp {
+  font-family: Consolas, Monaco, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.9em;
+  background: $code-bg-color;
+}

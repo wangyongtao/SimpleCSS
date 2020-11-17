@@ -1,0 +1,62 @@
+// Color
+
+@import "color_ext";
+
+// colors
+$white:   #fff !default;    // 白色
+$black:   #000 !default;    // 黑色
+$blue:    #3298dc !default; // 蓝色
+$indigo:  #6610f2 !default; // 靛蓝色
+$purple:  #6f42c1 !default; // 紫色
+$pink:    #d63384 !default; // 粉红色
+$red:     #dc3545 !default; // 红色
+$orange:  #fd7e14 !default; // 橘黄色
+$yellow:  #ffc107 !default; // 黄色
+$green:   #198754 !default; // 绿色
+$teal:    #20c997 !default; // 蓝绿色
+$cyan:    #0dcaf0 !default; // 蓝绿色
+$gray:    #6c757d !default; // 灰色
+
+$primary: $blue !default;
+$secondary: $green !default;
+$success: $blue !default;
+$error: $red !default;
+$warning: $yellow !default;
+
+$code-bg-color: #f5f2f0;
+
+
+$bg-primary: $blue;
+$bg-success: $green;
+$bg-error: $red;
+$bg-warning: $yellow;
+$bg-secondary: lighten($primary, 37.5%) !default;
+
+
+$dark-color: #303742 !default;
+$light-color: #fff !default;
+
+$border-color: lighten($dark-color, 65%) !default;
+$border-color-dark: darken($border-color, 10%) !default;
+$border-color-light: lighten($border-color, 8%) !default;
+
+$bg-color: lighten($dark-color, 75%) !default;
+$bg-color-dark: darken($bg-color, 3%) !default;
+$bg-color-light: $light-color !default;
+
+$primary-color: $blue !default;
+$primary-color-dark: darken($primary-color, 3%) !default;
+$primary-color-light: lighten($primary-color, 3%) !default;
+
+$secondary-color: lighten($primary-color, 37.5%) !default;
+$secondary-color-dark: darken($secondary-color, 3%) !default;
+$secondary-color-light: lighten($secondary-color, 3%) !default;
+
+// Gray colors
+$gray-color: lighten($dark-color, 55%) !default;
+$gray-color-dark: darken($gray-color, 30%) !default;
+$gray-color-light: lighten($gray-color, 20%) !default;
+ 
+$success-color: #32b643 !default;
+$warning-color: #ffb700 !default;
+$error-color: #e85600 !default;

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SimpleCSS framework</title>
+	<meta name="author" content="wangyongtao" />
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="SimpleCSS: A simple CSS framework.">
+	<!-- import simple.css -->
+    <link rel="stylesheet" type="text/css" href="../dist/simple.css">
+</head>
+ 
+<body>
+
+<div class="container">
+	<header class="navbar">
+	  <section class="navbar-section">
+	    <a href="..." class="navbar-brand mr-2">SimpleCSS</a>
+	    <a href="/demo/index.html">Examples</a>
+	    <a href="https://github.com/wangyongtao">GitHub</a>
+	  </section>
+	  <section class="navbar-section">
+	    <a href="/demo/login.html">login</a>
+	    <a href="/demo/register.hmtl">register</a>
+	  </section>
+	</header>
+</div>
+
+<div class="container">
+ 
+	<form class="form form-aligned">
+        <div class="control-group">
+            <label for="aligned-name">Username</label>
+            <input type="text" id="aligned-name" placeholder="Username" />
+            <span class="form-message-inline">This is a required field.</span>
+        </div>
+        <div class="control-group">
+            <label for="aligned-password">Password</label>
+            <input type="password" id="aligned-password" placeholder="Password" />
+        </div>
+        <div class="control-group">
+            <label for="aligned-email">Email Address</label>
+            <input type="email" id="aligned-email" placeholder="Email Address" />
+        </div>
+        <div class="controls">
+            <label for="aligned-cb" class="checkbox">
+                <input type="checkbox" id="aligned-cb" /> I&#x27;ve read the terms and conditions</label>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+	</form>
+
+</div>
+
+
+</body>
+</html>
