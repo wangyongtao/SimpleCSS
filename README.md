@@ -33,6 +33,14 @@ $ sass --watch src/index.scss dist/simple.css
 $ sass --watch src/index.scss dist/simple.min.css --style compressed
 ```
 
+Github Pages:
+
+```sh
+$ sass src/index.scss docs/dist/simple.css
+$ sass src/index.scss docs/dist/simple.min.css --style compressed
+```
+
+
 ## Thanks
 
 [pure](https://github.com/pure-css/pure)  
